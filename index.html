@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>237 Horizons | Discover Cameroon - Africa in Miniature</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+
+  <!-- SHARED NAVIGATION -->
   <header>
     <nav class="navbar">
       <a href="index.html" class="logo">237<span>Horizons</span></a>
@@ -35,5 +45,154 @@
     </nav>
   </header>
 
-  <!-- Rest of the page content goes here -->
+  <main>
+    <!-- 1. HERO BANNER: 4-6s VIDEO + 3 IMAGES (5s DIAPORAMA) -->
+    <section class="hero-slideshow" aria-label="Cameroon Highlights Slideshow">
+      <div class="slide slide-1">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/cameroon-hero.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="slide slide-2" style="background-image: url('assets/images/mount-cameroon.jpg');" role="img" aria-label="Mount Cameroon volcanic peak"></div>
+      <div class="slide slide-3" style="background-image: url('assets/images/lobe-falls.jpg');" role="img" aria-label="Lobe Waterfalls meeting the Atlantic Ocean in Kribi"></div>
+      <div class="slide slide-4" style="background-image: url('assets/images/foumban-palace.jpg');" role="img" aria-label="Foumban Royal Palace in the West Region"></div>
+
+      <div class="hero-overlay">
+        <h1>Welcome to Cameroon: Africa in Miniature</h1>
+        <p>Experience golden Atlantic beaches, misty volcanic peaks, vibrant royal kingdoms, and over 250 living cultures in one unforgettable journey.</p>
+        <div>
+          <a href="explore.html" class="btn-3d">Start Exploring</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. DESTINATION INTRODUCTION & 3 REASONS TO VISIT -->
+    <section class="section-container">
+      <div class="section-header">
+        <h2>Why Visit Cameroon?</h2>
+      </div>
+      <p style="max-width: 780px; margin-bottom: 2.5rem; font-size: 1.08rem;">
+        Nestled at the crossroads of West and Central Africa, Cameroon earns its nickname <strong>"Africa in Miniature"</strong> by bringing together every major African climate and landscape—from Saharan savannas in the Far North to lush equatorial rainforests in the South.
+      </p>
+
+      <div class="flip-grid">
+        <article class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="assets/images/mount-cameroon.jpg" alt="Hikers near the summit of Mount Cameroon">
+              <div class="flip-front-caption">
+                <h3>1. Unmatched Biodiversity</h3>
+              </div>
+            </div>
+            <div class="flip-back">
+              <h3>Nature Without Limits</h3>
+              <p>Climb Mount Cameroon (4,095m), spot elephants and lions in Waza National Park, or watch the Lob&eacute; Waterfalls cascade directly into the Atlantic Ocean.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="assets/images/toghu-culture.jpg" alt="Traditional Cameroonian Toghu ceremonial attire">
+              <div class="flip-front-caption">
+                <h3>2. 250+ Living Cultures</h3>
+              </div>
+            </div>
+            <div class="flip-back">
+              <h3>A Mosaic of Traditions</h3>
+              <p>From the intricate hand-embroidered <em>Toghu</em> regalia of the Grassfields to the coastal <em>Ngondo</em> water festival, every region celebrates living heritage.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="assets/images/ndole-dish.jpg" alt="Plate of Cameroonian Ndole with fried plantains">
+              <div class="flip-front-caption">
+                <h3>3. World-Class Gastronomy</h3>
+              </div>
+            </div>
+            <div class="flip-back">
+              <h3>Flavors of the 237</h3>
+              <p>Savor national classics like <em>Ndol&eacute;</em>, spicy <em>Achu &amp; Yellow Soup</em>, grilled Kribi sea fish, and globally prized Penja white pepper.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. NASA-STYLE VERTICAL "DISCOVER MORE" SHOWCASE -->
+    <section class="section-container dark-showcase">
+      <div class="section-header">
+        <h2>Discover More of Cameroon</h2>
+        <a href="explore.html" class="btn-3d">View All Experiences &rarr;</a>
+      </div>
+
+      <div class="discover-grid">
+        <a href="explore.html#attractions" class="vertical-card" style="background-image: url('assets/images/mount-cameroon.jpg');">
+          <div class="card-content">
+            <h3>Volcanic Peaks &amp; Crater Lakes</h3>
+            <span class="arrow-badge">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="explore.html#attractions" class="vertical-card" style="background-image: url('assets/images/lobe-falls.jpg');">
+          <div class="card-content">
+            <h3>Kribi Coast &amp; Lob&eacute; Falls</h3>
+            <span class="arrow-badge">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="explore.html#culture" class="vertical-card" style="background-image: url('assets/images/foumban-palace.jpg');">
+          <div class="card-content">
+            <h3>Royal Palaces &amp; Bamoun Art</h3>
+            <span class="arrow-badge">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="explore.html#cuisine" class="vertical-card" style="background-image: url('assets/images/ndole-dish.jpg');">
+          <div class="card-content">
+            <h3>Culinary Heritage &amp; Spices</h3>
+            <span class="arrow-badge">&rarr;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>237 Horizons</h3>
+        <p>Your guide to exploring the landscapes, traditions, and flavors of Cameroon—Africa in Miniature.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore Attractions &amp; Culture</a></li>
+          <li><a href="quiz.html">Cameroon Travel Quiz</a></li>
+          <li><a href="about.html">About the Creator</a></li>
+          <li><a href="contact.html">Plan Your Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Travel Info</h3>
+        <ul>
+          <li>Capital: Yaound&eacute;</li>
+          <li>Official Languages: French &amp; English</li>
+          <li>Currency: Central African CFA Franc (XAF)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 237 Horizons. Media credits documented in accompanying project sources.</p>
+    </div>
+  </footer>
+
 </body>
+</html>
