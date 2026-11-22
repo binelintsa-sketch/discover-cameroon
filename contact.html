@@ -1,25 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Travel Enquiries | 237 Horizons</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+
+  <!-- SHARED NAVIGATION -->
   <header>
     <nav class="navbar">
       <a href="index.html" class="logo">237<span>Horizons</span></a>
       <ul class="nav-links">
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
         <li>
           <details class="mega-dropdown">
             <summary>Explore &#9662;</summary>
             <div class="dropdown-panel">
               <div class="dropdown-links">
                 <a href="explore.html#attractions">
-                  <strong>Top Attractions</strong>
-                  <span>Mount Fako, Lob&eacute; Falls &amp; Waza Park</span>
+                  <strong>Tourist Sites</strong>
+                  <span>11 landmarks, parks, lakes &amp; coasts</span>
                 </a>
                 <a href="explore.html#culture">
-                  <strong>Culture &amp; Traditions</strong>
-                  <span>Toghu regalia, Ndop &amp; traditional dances</span>
+                  <strong>Traditions &amp; Culture</strong>
+                  <span>Grassfields, Islamic, Beti-Fang, Sawa &amp; Pygmies</span>
                 </a>
                 <a href="explore.html#cuisine">
-                  <strong>Cameroonian Gastronomy</strong>
-                  <span>Interactive 3D dish cards</span>
+                  <strong>Cameroonian Meals</strong>
+                  <span>9 iconic dishes on 3D flip cards</span>
                 </a>
               </div>
               <button type="button" class="close-menu-btn" onclick="this.closest('details').removeAttribute('open')">
@@ -30,10 +40,105 @@
         </li>
         <li><a href="quiz.html">Travel Quiz</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Rest of the page content goes here -->
+  <main>
+    <section class="page-banner">
+      <h1>Plan Your Cameroon Enquiry</h1>
+      <p>Have questions about tourist sites, cultural festivals, or traditional cuisine? Reach out below.</p>
+    </section>
+
+    <section class="section-container">
+      <div class="contact-form-wrapper">
+        <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+          Fields marked with <span class="required-star">*</span> are required.
+        </p>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="full-name">Full Name <span class="required-star">*</span></label>
+            <input type="text" id="full-name" name="fullName" placeholder="e.g., Marie Tchuente" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required-star">*</span></label>
+            <input type="email" id="email" name="email" placeholder="e.g., marie@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Main Area of Interest</label>
+            <select id="interest" name="interest">
+              <option value="Mountains, Lakes &amp; Reserves">Mountains, Lakes &amp; Wildlife Reserves</option>
+              <option value="Kribi Coast &amp; Chute de Lobe">Kribi Coast &amp; Chute de Lob&eacute;</option>
+              <option value="Royal Palaces &amp; Monuments">Royal Palaces &amp; Monuments</option>
+              <option value="Cultural Traditions &amp; Festivals">Cultural Traditions &amp; Festivals</option>
+              <option value="Cameroonian Gastronomy">Cameroonian Gastronomy</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="travel-date">Preferred Travel Date</label>
+            <input type="date" id="travel-date" name="travelDate">
+          </div>
+
+          <div class="form-group">
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" name="travelers" min="1" max="30" value="1">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message or Enquiry <span class="required-star">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us which destinations, cultural experiences, or meals you would like to learn more about..." required></textarea>
+          </div>
+
+          <div class="form-group checkbox-row">
+            <input type="checkbox" id="guide-updates" name="guideUpdates" checked>
+            <label for="guide-updates" style="margin-bottom: 0; font-weight: 500;">Send me seasonal travel tips for Cameroon</label>
+          </div>
+
+          <button type="submit" class="btn-3d">Submit Enquiry</button>
+        </form>
+
+        <!-- IMMEDIATE SUBMISSION FEEDBACK MESSAGE -->
+        <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>237 Horizons</h3>
+        <p>Your guide to exploring the landscapes, traditions, and meals of Cameroon&mdash;Africa in Miniature.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore Sites, Culture &amp; Meals</a></li>
+          <li><a href="quiz.html">Cameroon Travel Quiz</a></li>
+          <li><a href="about.html">About the Creator</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick Facts</h3>
+        <ul>
+          <li>Destination: Cameroon</li>
+          <li>11 Tourist Sites &amp; 5 Cultural Groups</li>
+          <li>9 Traditional Dishes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 237 Horizons. All media credits documented in the project sources PDF.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+</html>
